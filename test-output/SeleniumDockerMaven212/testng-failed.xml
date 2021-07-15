@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [SeleniumDockerMaven212]">
+  <listeners>
+    <listener class-name="com.itest.listner.ExecutionListener"/>
+  </listeners>
+  <test thread-count="5" verbose="2" name="SeleniumDocker(failed)">
+    <classes>
+      <class name="org.wtt.test.SampleConnectGrid">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- org.wtt.test.SampleConnectGrid -->
+      <class name="org.wtt.test.SeleniumDocker">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCheckBox"/>
+          <include name="simpleTest"/>
+          <include name="afterTest"/>
+          <include name="setupBeforeSuite"/>
+        </methods>
+      </class> <!-- org.wtt.test.SeleniumDocker -->
+    </classes>
+  </test> <!-- SeleniumDocker(failed) -->
+</suite> <!-- Failed suite [SeleniumDockerMaven212] -->
